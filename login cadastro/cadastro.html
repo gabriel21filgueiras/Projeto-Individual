@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-header">
+        <a class="logo" href="../home/index.html">
+            <img id="logo" height="70px" width="100px" src="../home/img/logo-ye2.0.png " />
+        </a>
+    </div>
+    <div class="container-campos">
+        Insira seu Nome:
+        <input type="text" id="ipt_nome"> <br>
+
+        Insira seu Email:
+        <input type="text" id="ipt_email"> <br>
+
+        Insira sua Senha:
+        <input type="text" id="ipt_senha"> <br>
+
+        Confirme sua Senha:
+        <input type="password" id="ipt_conf"> <br>
+    </div>
+    <div class="cadastro">
+    <button onclick="cadastrar()">Faça seu Cadastro</button>
+    <ul>
+    Já possui cadastro? <br> Faça seu login <a  class="login" href="/login cadastro/login.html"> aqui
+    </a> </ul>
+    </div>
+    <div id="div_mensagem"></div>
+</body>
+</html>
+<script>
+    function cadastrar() {
+    let nome = ipt_nome.value;
+    let email = ipt_email.value;
+    let senha = ipt_senha.value;
+    let conf = ipt_conf.value;
+
+    
+
+
+    }
+
+</script>
