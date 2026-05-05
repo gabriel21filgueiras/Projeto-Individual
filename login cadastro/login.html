@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ye.com</title>
+    <title>Login</title>
     <link rel="stylesheet" href="../login cadastro/style-escolha.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,6 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
     <link rel="icon" href="../home/img/logo-ye2.0.png" />
+    <link rel="stylesheet" href="../login cadastro/style-login.css">
 </head>
 <body>
      <div class="container-header">
@@ -19,20 +20,21 @@
         </a>
     </div>
     <div class="container-campos">
-        Nome:
-        <input type="text" id="ipt_nome"> <br>
+        <h2>Bem-Vindo de Volta</h2>
+        <div class="input-campos">
+        <label for="ipt_nome">Nome:</label>
+        <input type="text" id="ipt_nome">
 
-        Email:
-        <input type="text" id="ipt_email"> <br>
+        <label for="ipt_email">Email:</label>
+        <input type="text" id="ipt_email">
 
-        Senha:
-        <input type="password" id="ipt_senha"> <br>
-
-        Confirme sua Senha:
-        <input type="password" id="ipt_confsenha"> <br>
-
-        <button onclick="login()">Login</button>
-
+        <label for="ipt_senha">Senha:</label>
+        <input type="password" id="ipt_senha">
+    </div>  <br>
+    
+    <div class="btn-login">
+    <button onclick="login()">FAÇA SEU LOGIN</button>
+    </div>
     </div>
 </body>
 </html>
