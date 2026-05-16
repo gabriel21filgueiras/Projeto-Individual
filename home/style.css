@@ -25,6 +25,12 @@ body {
     margin-bottom: 10px;
     position: fixed;
     top: 24px;
+    transition: opacity 0.3s ease;
+}
+
+#logo.sumir {
+    opacity: 0;
+    pointer-events: none;
 }
 
 #banner {
@@ -187,19 +193,18 @@ ul {
     border: 1px solid rgba(200, 154, 69, 0.2); 
     padding: 20px 0;
     border-radius: 15px;
+    animation: spin 15s infinite linear;
 }
 
 .group {
     display: flex;
     gap: 30px;
     padding: 0 15px;
-    animation: spin 15s infinite linear;
 }
 
 .item-carrossel {
     width: 250px;
     height: 250px;
-    flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -223,5 +228,45 @@ ul {
 }
 
 .container-footer {
+    display: flex;
+    border-top: 3px solid #c89a45;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    background: linear-gradient(100deg, #efaa42, #B07A2B, #D39A45, #120D08);
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
 
+.container-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container-footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.fa-brands {
+    color: #f8ca74;
+    transition: color 0.2s ease;
+}
+.fa-brands:hover {
+    color: black;
+}
+
+.fa-instagram {
+    font-size: 80px;
+}
+
+.fa-github {
+    font-size: 80px;
+}
+
+.texto {
+    color: #f8ca74;
 }
