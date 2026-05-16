@@ -7,6 +7,7 @@
     <title>ye.com</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./img/ye-ursinho-bg.png" height="100px" width="300px" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -46,7 +47,7 @@
                 Discografia
             </h1>
             <img id="background" height="800px" width="100%" src="img/background.png" />
-            <div class="carrossel">
+            <div class="carrossel" id="carrossel">
                 <div class="container-itens">
                     <div class="group">
                         <div class="item-carrossel"><img src="./img/tcd.jfif"></div>
@@ -80,8 +81,31 @@
             </div>
         </div>
         <div class="container-footer">
+            <div class="container-icons">
+                <a href="https://github.com/gabriel21filgueiras"><i class="fa-brands fa-github">
+                </i> </a>
+                <a href="https://www.instagram.com/gxbrielfg_"><i class="fa-brands fa-instagram">
+                </i></a>
+            </div>
+                <small class="texto">&copy; 2026 Gabriel Filgueiras. Todos os direitos reservados.</small>
         </div>
     </div>
-
 </body>
 </html>
+<script>
+    window.addEventListener('scroll', function() {
+
+        let logo = document.querySelector('#logo')
+        let carrossel = document.querySelector('#carrossel')
+
+        let posicaoCarrossel = carrossel.getBoundingClientRect().top
+
+        if (posicaoCarrossel <= 180) {
+            logo.classList.add('sumir')
+        } 
+        else {
+            logo.classList.remove('sumir')
+        }
+
+    })
+</script>
